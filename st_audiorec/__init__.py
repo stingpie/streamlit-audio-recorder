@@ -15,7 +15,7 @@ def st_audiorec(key=None):
     st_audiorec = components.declare_component("st_audiorec", path=build_dir)
 
     # Create an instance of the component: STREAMLIT AUDIO RECORDER
-    raw_audio_data = st_audiorec(key)  # raw_audio_data: stores all the data returned from the streamlit frontend
+    raw_audio_data = st_audiorec(key=key)  # raw_audio_data: stores all the data returned from the streamlit frontend
     wav_bytes = None                # wav_bytes: contains the recorded audio in .WAV format after conversion
 
     # the frontend returns raw audio data in the form of arraybuffer
